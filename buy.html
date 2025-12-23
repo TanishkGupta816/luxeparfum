@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Luxe Parfum</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">LUXE PARFUM</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html" class="active">Buy</a></li>
+                <li><a href="payment.html">Payment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Buy Page Content -->
+    <section class="buy-section">
+        <div class="container">
+            <h1 class="page-title fade-in">Our Premium Collection</h1>
+            <p class="page-subtitle fade-in">Select your signature scent</p>
+
+            <div class="perfume-grid">
+                <!-- Perfume 1 -->
+                <div class="perfume-card buy-card" data-id="1">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Noir Élégance">
+                    </div>
+                    <div class="card-content">
+                        <h3>Noir Élégance</h3>
+                        <p class="card-description">A sophisticated blend of dark woods and amber with hints of leather</p>
+                        <p class="card-price">$299</p>
+                        <button class="buy-button" onclick="buyProduct(1, 'Noir Élégance', 299, '/placeholder.svg?height=400&width=300')">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Perfume 2 -->
+                <div class="perfume-card buy-card" data-id="2">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Golden Aura">
+                    </div>
+                    <div class="card-content">
+                        <h3>Golden Aura</h3>
+                        <p class="card-description">Radiant notes of citrus and vanilla with warm musk undertones</p>
+                        <p class="card-price">$349</p>
+                        <button class="buy-button" onclick="buyProduct(2, 'Golden Aura', 349, '/placeholder.svg?height=400&width=300')">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Perfume 3 -->
+                <div class="perfume-card buy-card" data-id="3">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Velvet Mystique">
+                    </div>
+                    <div class="card-content">
+                        <h3>Velvet Mystique</h3>
+                        <p class="card-description">Enigmatic rose and oud fusion with exotic spices</p>
+                        <p class="card-price">$399</p>
+                        <button class="buy-button" onclick="buyProduct(3, 'Velvet Mystique', 399, '/placeholder.svg?height=400&width=300')">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Perfume 4 -->
+                <div class="perfume-card buy-card" data-id="4">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Crystal Dawn">
+                    </div>
+                    <div class="card-content">
+                        <h3>Crystal Dawn</h3>
+                        <p class="card-description">Fresh bergamot and jasmine with aquatic notes</p>
+                        <p class="card-price">$279</p>
+                        <button class="buy-button" onclick="buyProduct(4, 'Crystal Dawn', 279, '/placeholder.svg?height=400&width=300')">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Perfume 5 -->
+                <div class="perfume-card buy-card" data-id="5">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Royal Saffron">
+                    </div>
+                    <div class="card-content">
+                        <h3>Royal Saffron</h3>
+                        <p class="card-description">Opulent saffron and sandalwood with precious resins</p>
+                        <p class="card-price">$449</p>
+                        <button class="buy-button" onclick="buyProduct(5, 'Royal Saffron', 449, '/placeholder.svg?height=400&width=300')">Buy Now</button>
+                    </div>
+                </div>
+
+                <!-- Perfume 6 -->
+                <div class="perfume-card buy-card" data-id="6">
+                    <div class="card-image">
+                        <img src="/placeholder.svg?height=400&width=300" alt="Midnight Orchid">
+                    </div>
+                    <div class="card-content">
+                        <h3>Midnight Orchid</h3>
+                        <p class="card-description">Exotic orchid and patchouli with white musk</p>
+                        <p class="card-price">$329</p>
+                        <button class="buy-button" onclick="buyProduct(6, 'Midnight Orchid', 329, '/placeholder.svg?height=400&width=300')">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Luxe Parfum. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

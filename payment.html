@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Luxe Parfum</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">LUXE PARFUM</div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="buy.html">Buy</a></li>
+                <li><a href="payment.html" class="active">Payment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="payment-container">
+            <!-- Selected Product Display -->
+            <div class="selected-product fade-in" id="selectedProduct">
+                <h2>Your Selection</h2>
+                <div id="productDetails">
+                    <p class="no-product">No product selected. Please visit our <a href="buy.html">shop</a>.</p>
+                </div>
+            </div>
+
+            <!-- Payment Form -->
+            <div class="payment-form fade-in-delay">
+                <h2>Payment Details</h2>
+                <form id="paymentForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Delivery Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Payment Method</label>
+                        <div class="payment-methods">
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="card" checked>
+                                <span>Credit/Debit Card</span>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="paymentMethod" value="upi">
+                                <span>UPI</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="cardDetails">
+                        <label for="cardNumber">Card Number</label>
+                        <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19">
+                        
+                        <div class="card-row">
+                            <div class="card-col">
+                                <label for="expiry">Expiry Date</label>
+                                <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                            </div>
+                            <div class="card-col">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="123" maxlength="3">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group hidden" id="upiDetails">
+                        <label for="upiId">UPI ID</label>
+                        <input type="text" id="upiId" placeholder="yourname@upi">
+                    </div>
+
+                    <button type="submit" class="pay-button">
+                        <span id="payButtonText">Pay Now</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Modal -->
+    <div class="modal hidden" id="successModal">
+        <div class="modal-content">
+            <div class="success-icon">✓</div>
+            <h2>Payment Successful!</h2>
+            <p>Your order has been placed successfully.</p>
+            <p class="order-message">Thank you for choosing Luxe Parfum.</p>
+            <button class="modal-button" onclick="closeModal()">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Luxe Parfum. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
