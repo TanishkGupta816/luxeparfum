@@ -3,81 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luxe Parfum - Premium Perfumes</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Luxe Parfum - Crafted Elegance in Every Drop</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">LUXE PARFUM</div>
+        <div class="navbar-container">
+            <div class="logo">Luxe Parfum</div>
             <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="buy.html">Buy</a></li>
-                <li><a href="payment.html">Payment</a></li>
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="products.html" class="nav-link">Shop</a></li>
+                <li><a href="cart.html" class="nav-link">Cart <span class="cart-count">0</span></a></li>
+                <li><a href="login.html" class="nav-link">Account</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-content fade-in">
-            <h1 class="hero-title">Experience Luxury</h1>
-            <p class="hero-subtitle">Discover the art of premium fragrances</p>
-            <p class="hero-tagline">Where elegance meets exclusivity</p>
-            <a href="buy.html" class="cta-button">Explore Collection</a>
+        <div class="hero-content">
+            <h1 class="hero-title">Crafted Elegance in Every Drop</h1>
+            <p class="hero-subtitle">Discover our exclusive collection of luxury perfumes</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-primary">Shop Now</a>
+                <a href="#featured" class="btn btn-secondary">Explore Collection</a>
+            </div>
         </div>
-        <div class="hero-image fade-in-delay">
-            <img src="perfume image1.jpg" alt="Luxury Perfume">
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?w=600&h=600&fit=crop" alt="Luxury perfume bottle">
         </div>
     </section>
 
-    <!-- Featured Perfumes Section -->
-    <section class="featured">
-        <div class="container">
-            <h2 class="section-title">Featured Collection</h2>
-            <div class="perfume-grid">
-                <div class="perfume-card">
-                    <div class="card-image">
-                        <img src="perfume image1.jpg" alt="Noir Élégance">
-                    </div>
-                    <div class="card-content">
-                        <h3>Noir Élégance</h3>
-                        <p class="card-description">A sophisticated blend of dark woods and amber</p>
-                        <p class="card-price">$299</p>
-                    </div>
-                </div>
-
-                <div class="perfume-card">
-                    <div class="card-image">
-                        <img src="/placeholder.svg?height=400&width=300" alt="Golden Aura">
-                    </div>
-                    <div class="card-content">
-                        <h3>Golden Aura</h3>
-                        <p class="card-description">Radiant notes of citrus and vanilla</p>
-                        <p class="card-price">$349</p>
-                    </div>
-                </div>
-
-                <div class="perfume-card">
-                    <div class="card-image">
-                        <img src="/placeholder.svg?height=400&width=300" alt="Velvet Mystique">
-                    </div>
-                    <div class="card-content">
-                        <h3>Velvet Mystique</h3>
-                        <p class="card-description">Enigmatic rose and oud fusion</p>
-                        <p class="card-price">$399</p>
-                    </div>
-                </div>
+    <!-- Featured Products -->
+    <section class="featured" id="featured">
+        <h2 class="section-title">Featured Collection</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="perfumeimage1.jpg" alt="Midnight Essence">
+                <h3>Midnight Essence</h3>
+                <p class="price">₹4,499</p>
+                <button class="btn btn-outline add-to-cart" data-name="Midnight Essence" data-price="4499">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="perfumeimage2.jpg" alt="Golden Dream">
+                <h3>Golden Dream</h3>
+                <p class="price">₹5,299</p>
+                <button class="btn btn-outline add-to-cart" data-name="Golden Dream" data-price="5299">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=300&h=400&fit=crop" alt="Ivory Whisper">
+                <h3>Ivory Whisper</h3>
+                <p class="price">₹3,999</p>
+                <button class="btn btn-outline add-to-cart" data-name="Ivory Whisper" data-price="3999">Add to Cart</button>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <p>&copy; 2025 Luxe Parfum. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Luxe Parfum</h4>
+                <p>Premium fragrances crafted with elegance and sophistication.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">in</a>
+                    <a href="#" class="social-icon">ig</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Luxe Parfum. All rights reserved.</p>
+        </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
+
